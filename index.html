@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Customer Rating System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <form>
+            <label for="custid">Customer ID</label><br>
+            <input type="text" name="custid" id="custid"><br>
+            <label for="name">CustomerName</label><br>
+            <input type="text" name="name" id="name"><br>
+
+
+            <button id="addBtn" class="btn waves-effect waves-light">Add</button>
+            <button id="updateBtn" class="btn waves-effect waves-light">Update</button>
+            <button id="removeBtn" class="btn waves-effect waves-light">Remove</button>
+            <br><br>
+            <center>
+                <input type="button" id="readBtn" class="btn waves-effect red darken-1" value="GET DETAILS">
+            </center>
+        </form>
+    </main>
+    <script src=""></script>
+    <script src=""></script>
+    <script src=""></script>
+
+    <script>
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="./function.js"></script>
+</body>
+
+</html>
